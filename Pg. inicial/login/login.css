@@ -1,0 +1,92 @@
+/* Base */
+body {
+    text-align: center;
+    line-height: 1;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.199);
+    background-color: #f8f8f8; /* opcional */
+    margin: 0;
+}
+
+/* Título */
+h1 {
+    font-size: 35px;
+    margin: 16px 0 12px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.24);
+}
+
+/* Subtítulo logo abaixo do h1 */
+.subtitulo {
+    margin: 0 0 25px 0;     /* respiro antes do formulário */
+    font-size: 18px;
+    color: #000;
+    text-shadow: none;
+}
+
+/* Container do formulário */
+.classes {
+    max-width: 360px;       /* largura confortável */
+    margin: 0 auto;         /* centraliza na página */
+    text-align: center;       /* alinha labels/inputs à esquerda dentro do bloco */
+}
+
+/* Bloco de cada campo (label + input) */
+.campo {
+    margin-bottom: 14px;    /* espaço entre os campos */
+}
+
+/* Label colado na caixa */
+.campo label {
+    display: block;
+    margin-bottom: 4px;     /* distância mínima pro input */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Inputs padrão */
+/* Inputs padrão menores */
+.input-padrao {
+    width: 200px;            /* largura menor (antes estava 100% do form) */
+    box-sizing: border-box;
+    padding: 6px 8px;        /* padding reduzido */
+    font-size: 14px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.438);
+    background: #fff;
+    outline: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+
+/* Placeholder dentro dos inputs */
+.input-padrao::placeholder {
+    font-size: 13px;
+    color: #555;
+}
+
+/* Foco do input (feedback visual) */
+.input-padrao:focus {
+    border-color: #000;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.12), 0 3px 3px rgba(0,0,0,0.25);
+}
+
+/* Botão Confirmar */
+.btnConfirm {
+    font-size: 15px;
+    border: 2.5px solid #000;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.438);
+    margin-top: 8px;        /* respiro após o último campo */
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Clique no botão */
+.btnConfirm:active {
+    background-color: #4747473a;
+    transform: scale(1.1);
+}
+

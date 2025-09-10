@@ -1,0 +1,54 @@
+h1 {
+    font-size: 35px; 
+    color: #000;     
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24); 
+    text-align: center;
+}
+
+body {
+    text-align: center;
+    line-height: 1;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.199); 
+}
+
+.classes p {
+    margin: 0;   /* tira o espaço dos <p> */
+    padding: 0;
+}
+
+.classes label {
+    display: block;
+    margin-bottom: 2px; /* espaço bem pequeno entre label e caixa */
+}
+
+.input-padrao {
+    border: 2px solid #000; 
+    border-radius: 3px;
+    margin-bottom: 6px; /* controla a distância entre um campo e outro */
+    padding: 5px;
+    font-size: 16px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.438);
+}
+.btnConfirm {
+    font-size: 15px;
+    border: 2.5px solid #000;   /* borda grossa */
+    border-radius: 6px;         /* cantos arredondados */
+    background-color: white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.438);
+
+    margin-top: 20px; /* afasta o botão do restante */
+    padding: 5px 5px; /* tamanho do botão */
+    cursor: pointer;
+}
+
+.btnConfirm:active{
+    background-color: #4747473a;
+    transform: scale(1.1);
+}
+
+.input-padrao::placeholder {
+    font-size: 14px;   /* tamanho da letra do placeholder */
+    color: #0000005e;       /* opcional: cor do placeholder */
+}

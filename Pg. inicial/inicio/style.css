@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px; 
+    color: #000;     
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24); /* sombra leve */
+}
+
+.acesso {
+    font-size: 35px;
+}
+
+/* Checkbox personalizado */
+.acesso-opcao input[type="checkbox"] {
+    appearance: none;           /* remove estilo padrão */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 20px;
+    height: 20px;
+    border: 2.5px solid #000;     /* borda grossa */
+    border-radius: 6px;         /* cantos arredondados */
+    background: #fff;
+    cursor: pointer;
+    position: relative;         /* necessário pro ::after */
+    transition: transform 0.2s ease, 
+                box-shadow 0.25s ease, 
+                background-color 0.25s ease;
+}
+
+/* Quando marcado */
+.acesso-opcao input[type="checkbox"]:checked {
+    background: #08ec7a; /* fundo verde */
+    box-shadow: 0 0 10px 3px rgba(0, 204, 102, 0.4);
+    transform: scale(1.1);
+}
+
+.acesso-opcao input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: #000000;                /* branco */
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%); /* centraliza */
+}
+
+.acesso-opcao {
+    font-size: 30px; 
+    font-weight: bold;
+    margin: 5px 0;   
+    display: flex;           
+    gap: 8px;                
+    justify-content: center;  
+    align-items: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.164); /* sombra no texto Cadastro/Login */
+}
+
+.btnConfirmar{
+    font-size: 15px;
+    border: 2.5px solid #000;     /* borda grossa */
+    border-radius: 6px;         /* cantos arredondados */
+    background-color: white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.438);
+}
+
+.btnConfirmar:active{
+    background-color: #4747473a;
+    transform: scale(1.1);
+}
